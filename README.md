@@ -5,7 +5,7 @@
 
 ## Repository Structure
 
-- This repository contains the following files:
+This repository contains the following files:
 
  - healthcarecostsprediction.ipynb: A Jupyter Notebook file that includes the code for data collection, preprocessing, visualization, splitting, model development, training, and evaluation.
  - HCPS.pkl: A pickle file that stores the trained linear regression model, which is used in the Streamlit web application.
