@@ -253,7 +253,7 @@ if options == 'Healthcare Provider':
     
 #CHATBOT WITH LLAMA 2
            
-with st.expander('Click Here To Get Chat And Get Further Recommendations'):
+with st.expander('Click Here To Chat And Get Further Recommendations'):
     
     replicate_api = st.secrets['REPLICATE_API_TOKEN']
     os.environ['REPLICATE_API_TOKEN'] = replicate_api
