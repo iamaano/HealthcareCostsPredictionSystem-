@@ -7,7 +7,7 @@
 
 This repository contains the following files:
 
- - healthcarecostsprediction.ipynb: A Jupyter Notebook file that includes the code for data collection, preprocessing, visualization, splitting, model development, training, and evaluation.
+ - HealthcareCostsPredictionSystem.ipynb: A Jupyter Notebook file that includes the code for data collection, preprocessing, visualization, splitting, model development, training, and evaluation.
  - HCPS.pkl: A pickle file that stores the trained linear regression model, which is used in the Streamlit web application.
  - requirements.txt: A file that lists all the necessary Python libraries and their versions required to run the project.
  - app.py: The code for the Streamlit web application that allows users to input data and receive predictions of their healthcare costs.
