@@ -1,6 +1,6 @@
 # Healthcare Costs Prediction System Using Linear Regression
 
-## Summary:
+## Summary
 - The system uses linear regression to predict healthcare costs, enabling healthcare providers to target resources effectively towards individuals likely to incur significant costs. The cost prediction model helps providers design medical aid packages with appropriate premiums and deductibles, ensuring financial sustainability. The insights gained from the cost prediction model can aid healthcare providers and medical aid organizations in their general business planning and decision-making processes. For individuals, having prior knowledge of their projected costs enables them to choose suitable medical aid packages and make informed lifestyle changes to manage their healthcare expenses.
 
 ## Repository Structure
@@ -34,7 +34,7 @@
 5) Model Deployment  
    - Deploying a model is a method of implementing a machine learning model to real use. In this model, the Streamlit library is used to develop a Graphical User Interface where the users give the necessary inputs required for the prediction.
 
-## Steps to run the web app:
+## Steps to run the web app
    - In VSCode, open the app.py file.
    - Click the "Run" button or press Ctrl+F5 (Windows/Linux) or Cmd+F5 (macOS) to run the application.
    - Run the following command to display the web app in your browser.
