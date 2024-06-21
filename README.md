@@ -37,5 +37,4 @@ This repository contains the following files:
 ## Steps to run the web app
    - In VSCode, open the app.py file.
    - Click the "Run" button or press Ctrl+F5 (Windows/Linux) or Cmd+F5 (macOS) to run the application.
-   - Run the following command to display the web app in your browser.
-   - In the VSCode terminal, type the command 'streamlit run app.py'. This will launch the web application in your default web browser.
+   - In the VSCode terminal, run the command 'streamlit run app.py'. This will launch the web application in your default web browser.
