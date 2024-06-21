@@ -14,7 +14,7 @@ This repository contains the following files:
 
 ## Steps for implementation:
 1) Data Collection  
-   - Collecting required data  
+   - Collecting required data  (https://www.kaggle.com/datasets/mirichoi0218/insurance)
    - Loading required libraries
      
 2) Data Preparation  
