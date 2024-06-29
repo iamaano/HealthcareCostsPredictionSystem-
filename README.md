@@ -1,40 +1,39 @@
 # Healthcare Costs Prediction System Using Linear Regression
 
 ## Summary
-- The system uses linear regression to predict healthcare costs, enabling healthcare providers to target resources effectively towards individuals likely to incur significant costs. The cost prediction model helps providers design medical aid packages with appropriate premiums and deductibles, ensuring financial sustainability. The insights gained from the cost prediction model can aid healthcare providers and medical aid organizations in their general business planning and decision-making processes. For individuals, having prior knowledge of their projected costs enables them to choose suitable medical aid packages and make informed lifestyle changes to manage their healthcare expenses.
+- The system uses linear regression to predict healthcare costs, enabling healthcare providers to target resources effectively towards individuals likely to incur significant costs. The system helps providers design medical aid packages with appropriate premiums and deductibles, ensuring financial sustainability. The insights gained from the system can aid healthcare providers and medical aid organizations in their general business planning and decision-making processes. For individuals, having prior knowledge of their projected costs enables them to choose suitable medical aid packages and make informed lifestyle changes to manage their healthcare expenses.
 
 ## Repository Structure
 
 This repository contains the following files:
 
- - HealthcareCostsPredictionSystem.ipynb: A Jupyter Notebook file that includes the code for data collection, preprocessing, visualization, splitting, model development, training, and evaluation.
- - HCPS.pkl: A pickle file that stores the trained linear regression model, which is used in the Streamlit web application.
- - requirements.txt: A file that lists all the necessary Python libraries and their versions required to run the project.
- - app.py: The code for the Streamlit web application that allows users to input data and receive predictions of their healthcare costs.
+ - App.py: The main Python script that runs the Streamlit web application.
+ - HCPS.pkl: A pre-trained regression model used for predicting healthcare costs.
+ - images/: A folder containing the images used in the web application.
+ - database/: A folder containing an exact replicate of the dataset used to train the regression model for exploration purposes.
+ - HealthCareCostPredictionSystem.ipynb: A Jupyter Notebook file containing the code for building the regression model.
+ - insurance.csv: The dataset used to train the regression model.
+ - requirements.txt: A text file containing the required Python packages.
 
 ## Steps for implementation:
-1) Data Collection  
-   - Collecting required data  (https://www.kaggle.com/datasets/mirichoi0218/insurance)
-   - Loading required libraries
-     
-2) Data Preparation  
-   - Data Cleaning  
-   - Data Normalization  
-   - Categorical Data Encoding  
-   - Data Analysis  
-   - Splitting the data
-      
-3) Model Training    
+Running the System
+1. Building and Training the Model
+ - Open the HealthcareCostPredictionSystem.ipynb file in your Jupyter Notebook environment.
+ - Run all the cells in the notebook to load the dataset, pre-process the data, split it into training and testing sets, build the linear regression model, train the model, and save the trained model to a pickle file.
 
-4) Model Evaluation and Validation   
-   - Graphical Representation of the predicted values  
-   - Metrics Evaluation  
-   - Prediction using new data
-         
-5) Model Deployment  
-   - Deploying a model is a method of implementing a machine learning model to real use. In this model, the Streamlit library is used to develop a Graphical User Interface where the users give the necessary inputs required for the prediction.
+2. Running the Streamlit Web App
+ - Open a terminal or command prompt and navigate to the directory where you unzipped the files and install the required Python libraries by running the following command: pip install -r requirements.txt
+ - Run the Streamlit web app by executing the following command: streamlit run App.py. This will start the Streamlit web application and open it in your default web browser.
 
-## Steps to run the web app
-   - In VSCode, open the app.py file.
-   - Click the "Run" button or press Ctrl+F5 (Windows/Linux) or Cmd+F5 (macOS) to run the application.
-   - In the VSCode terminal, run the command 'streamlit run app.py'. This will launch the web application in your default web browser.
+Using the System
+ - The web interface has a sidebar menu with three options: ‘Medical Aid Provider’, ‘Policy Holder’, and ‘Healthcare Provider’.
+ - Select the appropriate option based on your role.
+ - Enter the required details such as gender, age, BMI, number of children, smoking status, and region.
+ - Click the "Predict" button to see the predicted healthcare costs.
+ - The application will also provide recommendations and suggested medical aid packages based on the predicted costs.
+ - The application includes a chatbot feature that provides real time responses about anything.
+ - The ‘Explore Dataset’ feature allows users to explore the dataset used to train the predictive model.
+
+Additional Requirements
+ - Create a folder named .streamlit in your project directory and inside it, create a file named secrets.toml. file with the following content:: REPLICATE_API_TOKEN = "replicate API key".
+ - Replace 'replicate API key' with your own replicate API key which you can create on: https://replicate.com/
