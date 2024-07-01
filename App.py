@@ -9,11 +9,11 @@ import os
 
 regressor = pkl.load(open('HCPS.pkl', 'rb'))
 
-st.set_page_config(page_title='HCPS')
+st.set_page_config(page_title='Healthcare Costs Prediction System', page_icon = 'images/icon.png')
 
 col1, col2 = st.columns([1,3])
 with col1: st.image('images/homepage.jpg')
-with col2: st.header('HealthCare Costs Prediction System')
+with col2: st.header('Healthcare Costs Prediction System')
 st.sidebar.title('Menu')
 options = st.sidebar.radio('Predict Costs As A:', options = ['Medical Aid Provider', 'Policy Holder', 'Healthcare Provider'])
 
