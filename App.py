@@ -309,31 +309,3 @@ with st.expander('Click Here To Chat And Get Further Recommendations'):
          message = {"role": "assistant", "content": full_response}
          st.session_state.messages.append(message)
 
-if options != 'Policy Holder':
-    
-#EXPLORE DATA
-    with st.expander('Click Here To Explore The Dataset'):
-         df = pd.read_csv('dataset/insurance.csv')
-        
-         st.subheader('Statistics of Dataframe')
-         st.write(df.describe())
-
-         st.subheader('Header of Dataframe')
-         st.write(df.head())
-             
-         st.subheader('Age vs Charges Plot')
-         fig, ax = plt.subplots(1,1)
-         smoker_color = np.where(df['smoker'] == 'yes', 'red', 'blue')
-         ax.scatter(x=df['age'], y=df['charges'],  c = smoker_color)
-         ax.set_xlabel('Age')
-         ax.set_ylabel('Charges')
-         st.pyplot(fig)
-         
-         st.subheader('BMI vs Charges Plot') 
-         fig, ax = plt.subplots(1,1)
-         smoker_color = np.where(df['smoker'] == 'yes', 'red', 'blue')
-         ax.scatter(x=df['bmi'], y=df['charges'],  c = smoker_color)
-         ax.set_xlabel('BMI')
-         ax.set_ylabel('Charges')
-
-         st.pyplot(fig)
