@@ -328,7 +328,6 @@ if options != 'Policy Holder':
          ax.set_xlabel('Age')
          ax.set_ylabel('Charges')
          st.pyplot(fig)
-         st.write('Red is for Smokers and Blue is for Non-Smokers')
          
          st.subheader('BMI vs Charges Plot') 
          fig, ax = plt.subplots(1,1)
