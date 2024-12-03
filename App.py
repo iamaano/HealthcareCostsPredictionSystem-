@@ -335,5 +335,4 @@ if options != 'Policy Holder':
          ax.scatter(x=df['bmi'], y=df['charges'],  c = smoker_color)
          ax.set_xlabel('BMI')
          ax.set_ylabel('Charges')
-
          st.pyplot(fig)
